@@ -19,4 +19,4 @@ const images = [
 ];
 
 // Call create image list with the id of the container, and array of images
-createImageList('snowboarding-photos-section', images);
+// createImageList('snowboarding-photos-section', images);

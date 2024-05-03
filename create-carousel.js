@@ -13,7 +13,7 @@ export default function createCarouselElements(
 
   const nextBtn = document.createElement('button');
   nextBtn.classList.add('carousel-button');
-  nextBtn.classList.add('prev');
+  nextBtn.classList.add('next');
   carouselContainer.appendChild(nextBtn);
 
   const listContainer = document.createElement('ul');
