@@ -1,4 +1,4 @@
-import createCarouselElements from './create-carousel.js';
+import initializeCarouselElements from './create-carousel.js';
 
 // Exports to image.js
 export default class CarouselHandler {
@@ -7,6 +7,6 @@ export default class CarouselHandler {
   }
 
   renderCarousel(containerToAddImages) {
-    createCarouselElements(this.listOfImages, containerToAddImages);
+    initializeCarouselElements(this.listOfImages, containerToAddImages);
   }
 }

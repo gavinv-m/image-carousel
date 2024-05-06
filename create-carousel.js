@@ -1,7 +1,7 @@
 import initializeButtons from './carousel-movement.js';
 
 // Exports to image.js
-export default function createCarouselElements(
+export default function initializeCarouselElements(
   arrayOfImages,
   containerToAddImages
 ) {
