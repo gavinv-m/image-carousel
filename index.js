@@ -1,4 +1,5 @@
 import createImageList from './image.js';
+import initializeButtons from './carousel-movement.js';
 
 const images = [
   {
@@ -20,3 +21,5 @@ const images = [
 
 // Call create image list with the id of the container, and array of images
 // createImageList('snowboarding-photos-section', images);
+
+initializeButtons();
