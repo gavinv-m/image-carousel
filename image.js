@@ -5,7 +5,6 @@ const filterInvalidSrc = function filterInvalidSrcAttributes(arr) {
 };
 
 export default function createImageList(containerToAddImages, arrayOfImages) {
-  // Clean up array for
   const imagesArray = filterInvalidSrc(arrayOfImages);
 
   const carousel = new CarouselHandler(imagesArray);
