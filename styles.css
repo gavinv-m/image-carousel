@@ -1,17 +1,4 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
 .carousel,
-section,
 .slide > img {
   height: 100%;
   width: 100%;
