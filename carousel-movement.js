@@ -1,3 +1,4 @@
+// Exports to create-carousel.js
 export default function initializeButtons() {
   const buttons = document.querySelectorAll('.carousel-button');
   const slides = document.querySelectorAll('.slide');

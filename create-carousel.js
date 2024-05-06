@@ -1,3 +1,6 @@
+import initializeButtons from './carousel-movement.js';
+
+// Exports to image.js
 export default function createCarouselElements(
   arrayOfImages,
   containerToAddImages
@@ -7,19 +10,23 @@ export default function createCarouselElements(
   carouselContainer.classList.add('carousel');
 
   const previousBtn = document.createElement('button');
+  previousBtn.innerHTML = '&#8592;';
   previousBtn.classList.add('carousel-button');
   previousBtn.classList.add('prev');
   carouselContainer.appendChild(previousBtn);
 
   const nextBtn = document.createElement('button');
+  nextBtn.innerHTML = '&#8594;';
   nextBtn.classList.add('carousel-button');
   nextBtn.classList.add('next');
   carouselContainer.appendChild(nextBtn);
 
   const listContainer = document.createElement('ul');
-  arrayOfImages.forEach((image) => {
+  arrayOfImages.forEach((image, index) => {
     const imageContainer = document.createElement('li');
     imageContainer.classList.add('slide');
+
+    if (index === 0) imageContainer.classList.add('active');
 
     const img = document.createElement('img');
     img.setAttribute('src', image.src);
@@ -35,5 +42,7 @@ export default function createCarouselElements(
 
   // Append to html section
   document.getElementById(containerToAddImages).appendChild(carouselContainer);
+
+  initializeButtons();
   return;
 }
