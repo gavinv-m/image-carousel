@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const images = [
     {
       id: 1,
-      src: 'https://rb.gy/2e14r6',
+      // src: 'https://rb.gy/2e14r6',
       alt: 'Man in yellow jacket and black pants riding on black skateboard during daytime.',
     },
     {

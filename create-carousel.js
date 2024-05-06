@@ -5,6 +5,9 @@ export default function createCarouselElements(
   arrayOfImages,
   containerToAddImages
 ) {
+  // Check if array not empty
+  if (arrayOfImages.length < 1) return;
+
   // Create buttons and images container
   const carouselContainer = document.createElement('div');
   carouselContainer.classList.add('carousel');
@@ -29,8 +32,12 @@ export default function createCarouselElements(
     if (index === 0) imageContainer.classList.add('active');
 
     const img = document.createElement('img');
+
     img.setAttribute('src', image.src);
-    img.setAttribute('alt', image.alt);
+
+    if (typeof image.alt === 'string') {
+      img.setAttribute('alt', image.alt);
+    }
 
     // Append image to li, and li to ul
     imageContainer.appendChild(img);

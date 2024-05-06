@@ -28,11 +28,14 @@ export default function initializeButtons() {
 
       // Update current index
       currentIndexActive += offset;
+      console.log(currentIndexActive);
 
       // Remove prev or next button
       if (currentIndexActive === 0) {
         prevBtn.style.visibility = 'hidden';
+        nextBtn.style.visibility = 'visible';
       } else if (currentIndexActive === numberOfSlides - 1) {
+        prevBtn.style.visibility = 'visible';
         nextBtn.style.visibility = 'hidden';
       } else {
         prevBtn.style.visibility = 'visible';
