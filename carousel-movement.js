@@ -28,7 +28,6 @@ export default function initializeButtons() {
 
       // Update current index
       currentIndexActive += offset;
-      console.log(currentIndexActive);
 
       // Remove prev or next button
       if (currentIndexActive === 0) {

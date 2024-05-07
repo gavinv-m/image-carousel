@@ -8,21 +8,25 @@
 
     You can install the package via npm by running:
 
-    ```javascript
-    npm install image-carousel
-    ```
+    npm install carousel-gallery
 
 ## Usage
 
     To use the image carousel package, follow these steps:
 
-    1. Import the createImageList function from the package:
+    1. Import the package's style in your index.js file:
 
     ```javascript
-    import createImageList from 'carousel-gallery';
+    import 'carousel-gallery/styles.css';
     ```
 
-    2. Call the createImageList function with the id of the container where you want the carousel to be placed, and an array of images:
+    2. To include the createImageList function in your module, use the import statement:
+
+    ```javascript
+    import createImageList from  'carousel-gallery/image-handler';
+    ```
+
+    3. Call the createImageList function with the ID of the html container where you want the carousel to be placed, and an array of images:
 
     ```javascript
     const images = [
@@ -53,7 +57,7 @@
     </div>
 
     <script type="module">
-    import createImageList from 'carousel-gallery';
+    import createImageList from  'carousel-gallery/image-handler';
 
     const images = [
         { src: 'image1.jpg', alt: 'Image 1' },

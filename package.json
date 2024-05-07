@@ -1,8 +1,17 @@
 {
   "name": "carousel-gallery",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "image-handler.js",
+  "style": "styles.css",
+  "files": [
+    "README.md",
+    "create-carousel.js",
+    "carousel-handler.js",
+    "image-handler.js",
+    "carousel-movement.js",
+    "styles.css"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
